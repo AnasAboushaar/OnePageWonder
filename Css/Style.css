@@ -8,7 +8,7 @@ body{
     margin: 0; /* marges  exterieur */ 
 }
 .container{
-width: 60px;
+width: 60%;
 /**
 * applique des marges exterieurs sur 
 * l'espace disponible seulement si une largeur fixe a ete precisee 
@@ -46,4 +46,41 @@ nav ul {
     gap: 20px; /*  l'ecart entre les elements*/
 
 }
+/**
+* Header
+*/
+header{
+background: linear-gradient(to right, #e71969, #f56306);
+color:white;
+text-align: center; /* Alignement horizontal du texte */
+/*padding-top: 215px;/* marges interieurs 
+padding-bottom: 215px;*/
+/*padding: 215px 0 215px 0;  Dans l ordre : haut droite bas gauche */
+padding: 215px 0 ; /* Dans l ordre : haut bas et droite : gauche */
+/*padding: 215px ;  les 4 cotes prennent une valeur */
+}
+header h1{
+font-size: 6rem;
+margin: 0;
+
+}
+header h2{
+    font-size: 4rem;
+    margin: 10px 0 80px 0 ; /**  10px haut , 0 droite , 80px bas , 0 gauche */
+}
+.btn{
+    color: white;
+text-decoration: none;
+text-transform: uppercase;
+background-color: #991e5f;
+padding: 30px 45px; /* 30 px haut et bas , 45px droite et gauche */
+border-radius: 100px; /* Arrondis les bords */
+letter-spacing: 0.2rem; /* Espacement entre les letters */
+ }
+ /* hover s'enclenche des que la souris survole l' elements * ATTENTION ! pas d'espace avant et apres le "!"*/
+ .btn:hover{
+background-color: #ff2400;
+transition: all 500ms;/* oermet d'ajouter une transition entre les changements de valeurs*/
+
+ }
 
