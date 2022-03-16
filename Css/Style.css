@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin: 0; /* marges  exterieur */ 
+}
+.container{
+width: 60px;
+/**
+* applique des marges exterieurs sur 
+* l'espace disponible seulement si une largeur fixe a ete precisee 
+*/ 
+margin: auto;
+}
+
+    /**
+    * barre de navigation
+    */
+
+nav{
+background-color: black; /* color de fond */
+text-transform: uppercase; /* met le texte en majuscule */
+
+
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/** Toujours presciser la balise "a" pour effectuer des changements */
+/* l'espace represente " a l'interieur de ... "*/
+nav a{
+    color: white; /* color de la police de caracteres */
+    text-decoration: none; /* Enleve le soulignelment de lien */
+    font-weight: bold;  /* Mettre le texte en gras */
+}
+nav ul {
+    display: flex; /* permet de diposer les elements les uns a cote des autres */
+    list-style: none; /* Retir les elements decoratifs commes les points */
+    gap: 20px; /*  l'ecart entre les elements*/
+
+}
+
